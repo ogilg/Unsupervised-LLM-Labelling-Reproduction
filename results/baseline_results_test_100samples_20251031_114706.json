@@ -1,0 +1,14 @@
+{
+  "config": {
+    "max_samples": 100,
+    "num_golden_samples": 8,
+    "split": "test",
+    "seed": 42,
+    "timestamp": "20251031_114706"
+  },
+  "results": {
+    "zero_shot_base": 0.72,
+    "zero_shot_instruct": 0.68,
+    "golden_labels_base": 0.85
+  }
+}

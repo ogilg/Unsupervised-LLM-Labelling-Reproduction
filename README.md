@@ -33,10 +33,10 @@ I re-implemented and evaluated ICM against baseline methods on 100 TruthfulQA te
 
 | Method | Accuracy |
 |--------|----------|
-| Zero-shot (BASE) | 69% |
-| Zero-shot (Chat) | 57% |
+| Zero-shot (BASE) | 72% |
+| Zero-shot (INSTRUCT) | 68% |
 | **ICM** | **90%** |
-| Golden Supervision (k=8) | 86% |
+| Golden Supervision (k=8) | 85% |
 
 - 200 iterations with simulated annealing (T₀=10.0, ρ=0.99)
 

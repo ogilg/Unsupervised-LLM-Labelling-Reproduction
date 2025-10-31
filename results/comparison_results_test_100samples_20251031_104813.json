@@ -14,9 +14,9 @@
     }
   },
   "results": {
-    "zero_shot_base": 0.69,
-    "zero_shot_instruct": 0.57,
-    "golden_labels_base": 0.86,
+    "zero_shot_base": 0.72,
+    "zero_shot_instruct": 0.68,
+    "golden_labels_base": 0.85,
     "icm_base": 0.9
   }
 }

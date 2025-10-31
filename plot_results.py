@@ -101,7 +101,8 @@ def plot_comparison(results_file, output_file=None, include_fixed=False,
 
     # Add title
     dataset_name = results.get('config', {}).get('split', 'TruthfulQA')
-    ax.set_title(f'Reproduction of Fig 1 in Feng et al. (2025)\nwith custom ICM implementation - {dataset_name.title()} Split',
+    model_name = 'Llama 3.1 405B'  # Model used in implementation
+    ax.set_title(f'Reproduction of Fig 1 in Feng et al. (2025)\nwith custom ICM implementation - {model_name} - {dataset_name.title()} Split',
                 fontsize=12, pad=20)
 
     # Auto-generate output file name if not specified
