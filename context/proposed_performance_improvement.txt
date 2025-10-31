@@ -1,0 +1,8 @@
+Proposed efficiency improvement:
+One trick that helps speed things up in the current implementation is to cache logprobs for given many-shot prompts. The problem is that when you accept a sample into the dataset, the cached values become worthless because all many-shot prompts have one extra sample. One solution to this is to fix the number of samples that get included in context, say to C. 
+But then if you want to benefit from caching, you have to fix the context for each logprob. This is unfair to newly accepted labels.
+One remedy to this is, when you accept the Nth label, to follow the procedure for each cached many-shot context window:
+With probability C/N, decide to include the new sample in the many-shot prompt.
+Pick one of the samples in the prompt at random and swap it with the new prompt.
+It can be proved that each sample has a C/N probability of being in each many-shot context window. And then as N grows, only a fraction of many-shot prompts need to be rerun. 
+Of course this assumes that this kind of batching works (or that some smart methods can make it work).

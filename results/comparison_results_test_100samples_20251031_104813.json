@@ -1,0 +1,22 @@
+{
+  "config": {
+    "max_samples": 100,
+    "num_golden_samples": 8,
+    "split": "test",
+    "seed": 42,
+    "timestamp": "20251031_104813",
+    "icm": {
+      "num_iterations": 200,
+      "initial_k": 8,
+      "initial_temp": 10.0,
+      "final_temp": 0.01,
+      "cooling_rate": 0.99
+    }
+  },
+  "results": {
+    "zero_shot_base": 0.69,
+    "zero_shot_instruct": 0.57,
+    "golden_labels_base": 0.86,
+    "icm_base": 0.9
+  }
+}
